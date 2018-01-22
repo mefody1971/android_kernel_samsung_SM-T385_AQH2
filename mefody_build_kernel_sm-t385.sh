@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#BUILD SCRIPT BY ASHYX
+#BUILD SCRIPT BY MEFODY (Original by ASHYX)
 
 #SETUP BUILD ENVIROMENT
 export ARCH=arm
@@ -8,7 +8,7 @@ export CROSS_COMPILE=/home/mefody/Projects/tool-chain/arm-cortex-linux-gnueabi-l
 
 #MAKE DEFCONFIG
 make  msm8937_sec_defconfig VARIANT_DEFCONFIG=msm8937_sec_gta2slte_sea_open_defconfig SELINUX_DEFCONFIG=selinux_defconfig
-cp $(pwd)/arch/arm/configs/msm8937_sec_gta2slte_sea_open_defconfi $(pwd)/.config
+cp $(pwd)/arch/arm/configs/msm8937_sec_gta2slte_sea_open_defconfig $(pwd)/.config
 
 #MAKE MENU CONFIG(REMOVE # TO ENABLE)
 #make nconfig
